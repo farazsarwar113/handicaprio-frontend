@@ -1,0 +1,63 @@
+#twc-site {
+  #twc-notes {
+    margin-bottom: 30px;
+    .tile {
+
+    }
+    .wrap-reset{
+      background-color: #fff;
+      padding-right: 0px;
+      margin-left: 10px;
+      margin-right: 10px
+    }
+    .streamline-form{
+        margin-bottom: 10px;
+    }
+    .tile-simple{
+        max-height: 250px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+      .tile-body{
+          padding-right: 10px !important;
+      }
+    .comment-form{
+        width: 88%;
+        margin-left: 54px;
+        margin-top: -35px;
+    }
+
+    .panel{
+    .reply-height{
+        height: 65px;
+    }
+    .trash-margin{
+        margin-right: 5px;
+        }
+    }
+
+  }
+
+  .toggleDateCreated {
+    margin-right: -2px;
+  }
+  .toggleDateDue,.toggleDateCreated {
+    width:100px;
+  }
+  .toggleDateDue {
+    margin-right: -22px;
+  }
+  .toggleDateContainer {
+    border-left: 0px transparent
+  }
+
+}
+#twc-allsites{
+  .fa-plus {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+
+}
+

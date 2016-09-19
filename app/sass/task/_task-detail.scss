@@ -1,0 +1,100 @@
+#taskpage {
+  .page-breadcrumb {
+    a:visited, a:active {
+      text-decoration: none;
+    }
+  }
+
+  .filter-btn {
+    height: 36px;
+    margin-right: 70px;
+  }
+
+  .h100 {
+    height: 100%;
+  }
+  .fa-plus {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .create_task {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 15px;
+  }
+  .highlight{
+    border: 1px solid blue;
+  }
+  .task-container a:hover, .task-container a:focus{
+    text-decoration: none;
+  }
+  #div1 a:hover, #div1 a:focus{
+    text-decoration: none;
+  }
+
+  .calendar-anchor-icon{
+    float: right;
+    color: #16a085;
+  }
+  .edit-btn{
+    float: right;
+  }
+
+}
+
+#twc-task-detail{
+  #twc-notes {
+    margin-bottom: 30px;
+    .tile {
+      background-color : transparent;
+    }
+    .streamline-form{
+      margin-bottom: 10px;
+    }
+      .wrap-reset{
+        background-color: #fff;
+        padding-right: 0px;
+      }
+      .tile-simple{
+        max-height: 250px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+      .tile-body{
+          padding-right: 10px !important;
+      }
+    .comment-form{
+        width: 88%;
+        margin-left: 54px;
+        margin-top: -35px;
+    }
+    .panel{
+      .reply-height{
+        height: 65px;
+      }
+      .trash-margin{
+        margin-right: 5px;
+      }
+    }
+  }
+  .priority-high{
+    background-color: #d9534f;
+    color: white !important;
+  }
+  .priority-low{
+    background-color:#5cb85c;
+    color: white !important;
+  }
+  .priority-normal{
+    background-color:#616f77;
+    color: white;
+  }
+
+  .description{
+    color: white !important;
+  }
+}
+

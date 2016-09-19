@@ -1,0 +1,145 @@
+<div class="page page-single-order">
+
+
+
+
+  <!-- page header -->
+  <div class="pageheader">
+
+    <h2>{{word.word}} <span>//{{word.type}} </span></h2>
+
+    <div class="page-bar">
+
+      <ul class="page-breadcrumb">
+        <li>
+          <a ui-sref="app.dashboard"><i class="fa fa-home"></i> Handicaprio</a>
+        </li>
+        <li>
+          <a ui-sref="app.dictionary">Dictionary</a>
+        </li>
+        <li>
+          <a ui-sref="app.word">{{word.word}}</a>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+  <!-- /page header -->
+
+
+
+
+
+
+  <!-- page content -->
+  <div class="pagecontent">
+
+
+    <div class="add-nav">
+      <div class="nav-heading">
+        <h3>Name : <strong class="text-greensea">{{word.word}}</strong></h3>
+        <span class="controls pull-right">
+          <a ui-sref="app.dictionary" class="btn btn-ef btn-ef-1 btn-ef-1-default btn-ef-1a btn-rounded-20 mr-5" uib-tooltip="Back"><i class="fa fa-times"></i></a>
+        </span>
+      </div>
+      <uib-tabset>
+
+
+
+
+
+
+
+
+        <uib-tab heading="Details">
+
+
+          <!-- row -->
+          <div class="row">
+            <!-- col -->
+            <div class="col-md-12">
+
+
+              <!-- tile -->
+              <section class="tile time-simple">
+
+
+                <!-- tile body -->
+                <div class="tile-body">
+
+
+                  <!-- row -->
+                  <div class="row">
+
+                    <!-- col -->
+                    <div class="col-md-9">
+                      <p class="text-uppercase text-strong mt-40 mb-0 custom-font">{{word.type}}</p>
+                      <h3 class="text-uppercase text-success mt-0 mb-20">{{word.word}}</h3>
+                      <p class="text-uppercase text-muted">asdaaaaaaaaaaaa</p>
+                    </div>
+                    <!-- /col -->
+
+                  </div>
+                  <!-- /row -->
+
+                  
+
+                </div>
+                <!-- /tile body -->
+
+              </section>
+              <!-- /tile -->
+
+              <h2> Related Words </h2>
+              <!-- tile -->
+              <section class="tile tile-simple">
+
+                <!-- tile body -->
+                <div class="tile-body p-0">
+
+                  <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>Name</th>
+                          <th>Type</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr ng-repeat="word in words">
+                          <td>{{$index +1}}</td>
+                          <td><a ui-sref="app.word({wid: word._id})">{{word.word}}</a></td>
+                          <td><a ui-sref="app.adverb({wid: word._id})">{{word.type}}</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+                <!-- /tile body -->
+
+              </section>
+              <!-- /tile -->
+
+
+            </div>
+            <!-- /col -->
+          </div>
+          <!-- /row -->
+
+        </uib-tab>
+
+      </uib-tabset>
+    </div>
+
+
+
+  </div>
+  <!-- /page content -->
+
+
+
+
+</div>

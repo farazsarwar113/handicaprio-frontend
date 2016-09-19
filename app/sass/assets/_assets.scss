@@ -1,0 +1,67 @@
+#twc-asset {
+  .form-group p{
+    font-size: 18px !important;
+    margin-top: 5px !important;
+  }
+  .edit-btn{
+    margin-left: -50px !important;
+  }
+
+  #manual-tabs .tabs-dark .nav-tabs {
+    background-color: #3f4e62;
+    height: 40px;
+  }
+
+  #manual-tabs .add-nav .nav-tabs > li:first-child {
+    margin-left: 10px;
+    margin-left: -10px;
+    margin-top: 1px;
+  }
+  #manual-tabs .tabs-dark .nav-tabs a {
+      height: 39px;
+  }
+
+  #twc-notes {
+    margin-bottom: 30px;
+    .tile {
+
+    }
+    .wrap-reset {
+      background-color: #fff;
+      padding-right: 0px;
+      margin-left: 10px;
+      margin-right: 10px
+    }
+    .streamline-form {
+      margin-bottom: 10px;
+    }
+    .tile-simple {
+      max-height: 250px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+    .tile-body {
+      padding-right: 10px !important;
+    }
+    .comment-form {
+      width: 88%;
+      margin-left: 54px;
+      margin-top: -35px;
+    }
+
+    .panel {
+      .reply-height {
+        height: 65px;
+      }
+      .trash-margin {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+#twc-allassets{
+  .fa-plus {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}

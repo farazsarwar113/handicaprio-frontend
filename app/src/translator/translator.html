@@ -1,0 +1,134 @@
+<div class="page page-widgets" id="twc-client">
+
+
+  <!-- page header -->
+  <div class="pageheader">
+
+    <h2 ng-if="currentPath == 'app.dictionary'">Dictionary Page</h2>
+    <h2 ng-if="currentPath == 'app.verbs'">Verbs</h2>
+    <h2 ng-if="currentPath == 'app.adjective'">Adjectives</h2>
+    <h2 ng-if="currentPath == 'app.adverb'">Adverbs</h2>
+    <h2 ng-if="currentPath == 'app.noun'">Noun</h2>
+    <h2 ng-if="currentPath == 'app.preposition'">Prepositions</h2>
+    <h2 ng-if="currentPath == 'app.determiner'">Determiner</h2>
+    <h2 ng-if="currentPath == 'app.pronoun'">Pronoun</h2>
+  
+    <div class="page-bar">
+
+      <ul class="page-breadcrumb">
+        <li>
+          <a ui-sref="app.dashboard"><i class="fa fa-home"></i> Handicaprio </a>
+        </li>
+        <li>
+          <a ui-sref="app.dictionary">Dictionary</a>
+        </li>
+        <li ng-if="currentPath == 'app.verbs'">
+          <a ui-sref="app.verbs">Verbs</a>
+        </li>
+        <li ng-if="currentPath == 'app.adjective'">
+          <a ui-sref="app.adjective">Adjective</a>
+        </li>
+        <li ng-if="currentPath == 'app.adverb'">
+          <a ui-sref="app.adverb">Adverb</a>
+        </li>
+        <li ng-if="currentPath == 'app.noun'">
+          <a ui-sref="app.noun">Noun</a>
+        </li>
+        <li ng-if="currentPath == 'app.preposition'">
+          <a ui-sref="app.preposition">Preposition</a>
+        </li>
+        <li ng-if="currentPath == 'app.determiner'">
+          <a ui-sref="app.determiner">Determiner</a>
+        </li>
+        <li ng-if="currentPath == 'app.pronoun'">
+          <a ui-sref="app.pronoun">Pronoun</a>
+        </li>
+      </ul>
+
+    </div>
+    <div style="padding: 15px"></div>
+
+    <div class="btn-toolbar mb-10" role="toolbar">
+      <div class="btn-group btn-group-md">
+        <a ui-sref="app.verbs" class="btn btn-default">Verbs</a>
+        <a ui-sref="app.noun" class="btn btn-default">Noun</a>
+        <a ui-sref="app.adjective" class="btn btn-default">Adjective</a>
+        <a ui-sref="app.pronoun" class="btn btn-default">Pronoun</a>
+        <a ui-sref="app.determiner" class="btn btn-default">Determiner</a>
+        <a ui-sref="app.adverb" class="btn btn-default">Adverbs</a>
+        <a ui-sref="app.preposition" class="btn btn-default">Preposition</a>
+      </div>
+    </div>
+
+  </div>
+  <!-- /page header -->
+
+
+  <!-- page content -->
+  <div class="pagecontent">
+
+
+    <section class="tile tile-simple">
+
+        <uib-tabset class="tabs-dark">
+
+            <uib-tab heading="Dictionary">
+
+                <div class="wrap-reset">
+
+                  <!-- tile -->
+                  <section class="tile">
+
+                    <!-- tile body -->
+                    <div class="tile-body table-custom">
+                        <section class="tile">
+                          <!-- tile body -->
+                          <div class="tile-body table-custom">
+                            <div class="table-responsive">
+                              <table datatable="ng" dt-options="dtOptions" dt-column-defs="dtColumnDefs"
+                                     class="table table-custom">
+                                <thead>
+                                <tr>
+                                  <th>ID</th>
+                                  <th style="width: 280px;">Word</th>
+                                  <th>Type</th>
+                                  <th style="width: 90px;" class="text-right"><span class="edit">Edit</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr ng-repeat="word in words | filter : searchClient">
+                                  <td>{{ $index+1 }}</td>
+                                  <td >
+                                    <a ui-sref="app.word({wid: word._id})">
+                                      <h5 class="media-heading mb-0 pointer">{{word.word}} 
+                                      </h5>
+                                    </a>
+                                  </td>
+                                  <td>
+                                    <small>
+                                      {{word.type}}
+                                    </small>
+                                  </td>
+                                  <td class="text-right">
+                                      <a href="" class="icon icon-danger icon-adjustment">
+                                        <i class="fa fa-trash" ng-click="showDeleteDialog($event,word,$index)"></i></a>
+                                  </td>
+                                </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <!-- /tile body -->
+
+                        </section>
+                    </div>
+                    </section>
+                </div>
+
+            </uib-tab>
+        </uib-tabset>
+
+      </div>
+    </section>
+  </div>
+</div>

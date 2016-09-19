@@ -1,0 +1,167 @@
+#twc-client {
+
+  .fa-plus {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .create_client {
+    width: 40px;
+    height: 40px;
+    float: right;
+  }
+
+  .fa-minus {
+    font-size: 10px;
+    line-height: 25px;
+  }
+.icon-plus{
+    font-size: 22px !important;
+    line-height: 25px !important;
+}
+  .delete_client {
+    width: 25px;
+    height: 25px;
+  }
+
+  .text-right {
+      .fa {
+        font-size: 15px;
+        line-height: 23px;
+      }
+    }
+    .icon-adjustment {
+      width: 23px;
+      height: 23px;
+      margin-top: 10px;
+    }
+
+  .page-breadcrumb {
+    a:visited, a:active {
+      text-decoration: none;
+    }
+  }
+
+  .display-nextline {
+    display: block;
+  }
+
+  .tile-simple{
+    overflow: hidden;
+  }
+  .client-divider {
+    margin-bottom:20px;
+
+    .text-muted {
+      text-align: center;
+      cursor: pointer;
+    }
+    .divider-left {
+      margin-top: 8px;
+      height: 3px;
+      background: #cccccc;
+    }
+    .divider-right {
+      margin-top: 8px;
+      height: 3px;
+      background: #cccccc;
+    }
+  }
+
+}
+
+#twc-client-profile {
+  .col-md-8 {
+    .text-right {
+      .fa {
+        font-size: 15px;
+        line-height: 23px;
+      }
+    }
+    .icon-adjustment {
+      width: 23px;
+      height: 23px;
+      margin: 0;
+    }
+  }
+
+  .edit {
+    margin-right: 12px;
+  }
+
+  .cropArea {
+    background: #E4E4E4;
+    overflow: hidden;
+    //width:500px;
+    height: 350px;
+  }
+
+  .submitbtn {
+    margin-top: 10px;
+  }
+  .croppedImage {
+    margin-top: 10px;
+    border-radius: 50%;
+  }
+
+  .tile-widget {
+    .form-group {
+      margin-top: 25px;;
+    }
+  }
+
+  .task-progress {
+    background-color: blue;
+    height: 4%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    opacity: 0.2;
+  }
+    .scroll-sec{
+        max-height: 250px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+      .sec-title{
+          padding-right: 10px !important;
+      }
+    .comment-form{
+        width: 88%;
+        margin-left: 54px;
+        margin-top: -35px;
+    }
+
+  .page-breadcrumb {
+    a:visited, a:active {
+      text-decoration: none;
+    }
+  }
+}
+
+
+/*
+.twc-notes{
+  .tile-body{
+    padding: 15px !important;
+  }
+
+  .wrap-reset{
+    padding: 0;
+  }
+
+  .streamline-form{
+    left:0;
+  }
+}*/
+
+.custom-error{
+
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    margin-top: 10px;
+    padding: 6px;
+    border-radius: 3px;
+  }
