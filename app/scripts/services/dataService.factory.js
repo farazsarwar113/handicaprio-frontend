@@ -169,6 +169,12 @@ angular.module('minovateApp').factory('dataService', function (Restangular, $roo
     }
   };
 
+  var translator = {
+    translate: function(data){
+      return Restangular.one('translation').post('',data);
+    }
+  }
+
   return {
     words: words,
     word: word,
@@ -186,6 +192,7 @@ angular.module('minovateApp').factory('dataService', function (Restangular, $roo
     getNoun: getNoun,
     allDeterminer: allDeterminer,
     getAdjective: getAdjective,
+    translator: translator
   };
 
 

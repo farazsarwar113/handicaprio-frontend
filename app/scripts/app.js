@@ -145,7 +145,7 @@ var app = angular
 
   .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.otherwise('/app/dictionary');
+    $urlRouterProvider.otherwise('/app/home');
 
     $stateProvider
 
