@@ -1,5 +1,5 @@
 "use strict";
-angular.module('minovateApp').factory('dataService', function (Restangular, $rootScope, $http, $localStorage) {
+angular.module('minovateApp').factory('dataService', function (Restangular, $rootScope, $http) {
 
   var words = {
     get: function () {

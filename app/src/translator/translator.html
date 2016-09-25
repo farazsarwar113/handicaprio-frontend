@@ -18,29 +18,33 @@
             <!-- End Title -->
         </header>
         <!-- ===== End Header ===== -->
-    <div class="form-group">
-      <label for="inputEmail3" class="col-sm-2 control-label">Sentence</label>
-      <div class="col-sm-10">
-        <textarea class="form-control" rows="5" id="comment" placeholder="Enter text here" ng-model="sentence.word"></textarea>
-      </div>
+    <div class="container">
+        <form class="form-horizontal" role="form" style="margin-top: 10px">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Sentence</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="5" id="comment" placeholder="Enter text here" ng-model="sentence.word"></textarea>
+              </div>
+            </div>
+            <button class="btn btn-primary" ng-click="ok()">Submit</button>
+        </form>
+
+        <p>Tokens: {{tokens}}</p>
+        <p>Parts of Speach: {{pos}}</p>
+
+        <div class="alert alert-warning" ng-show="warnings">
+          <a class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Warning!</strong>
+            <span ng-repeat="warning in warnings">
+              {{warning.reason}}
+            </span>
+        </div>  
     </div>
-    <button class="btn btn-primary" ng-click="ok()">Submit</button>
-
-    <p>Tokens: {{tokens}}</p>
-
-    <div class="alert alert-warning" ng-show="warnings">
-      <a class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        <strong>Warning!</strong>
-        <span ng-repeat="warning in warnings">
-          {{warning.reason}}
-        </span>
-    </div>  
-
     <div class="jumbotron">
     <div class="container">
         <video width="600" height="400" controls>
-          <source src="video/ASL%20sign%20for%20HELP%20%20HandSpeak.mp4" type="video/mp4">
-          <source src="video/ASL%20sign%20for%20HELP%20%20HandSpeak.mp4" type="video/ogg">
+          <source src="https://s3-eu-west-1.amazonaws.com/handicaprio/videos/ASL+sign+for+AFGHANISTAN++American+Sign+Language+Dictionary.mp4" type="video/mp4">
+          <source src="https://s3-eu-west-1.amazonaws.com/handicaprio/videos/ASL+sign+for+AFGHANISTAN++American+Sign+Language+Dictionary.mp4" type="video/ogg">
             </video>
         <p>Aboard | Verb </p>
         

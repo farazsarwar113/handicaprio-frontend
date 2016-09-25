@@ -14,6 +14,7 @@ angular.module('minovateApp')
 				$scope.warnings = res.data.warning;
 			}
 			$scope.tokens = res.data.tokens;
+			$scope.pos = res.data.pos;
 
 		},function(err){
 			console.log(err);
