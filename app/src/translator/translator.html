@@ -42,11 +42,9 @@
     </div>
     <div class="jumbotron">
     <div class="container">
-        <video width="600" height="400" controls>
-          <source src="https://s3-eu-west-1.amazonaws.com/handicaprio/videos/ASL+sign+for+AFGHANISTAN++American+Sign+Language+Dictionary.mp4" type="video/mp4">
-          <source src="https://s3-eu-west-1.amazonaws.com/handicaprio/videos/ASL+sign+for+AFGHANISTAN++American+Sign+Language+Dictionary.mp4" type="video/ogg">
-            </video>
-        <p>Aboard | Verb </p>
+        <video controls autoplay="true" allowfullscreen="" width="600" height="400" ng-repeat="video in vm.videos">
+            <source ng-src="{{video}}">
+        </video>
         
             <a class="btn btn-default btn-md"><i class="fa fa-plus" aria-hidden="true"> Add to</i></a>
         <a class="btn btn-default btn-md"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</a>

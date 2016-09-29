@@ -15,6 +15,15 @@ angular.module('minovateApp')
 			}
 			$scope.tokens = res.data.tokens;
 			$scope.pos = res.data.pos;
+			$scope.videos = [];
+	        for(var i=0; i< $scope.tokens.length; i++){
+	          console.log($scope.tokens[i]);
+	          
+	          $scope.videos.push('https://s3-eu-west-1.amazonaws.com/handicaprio/videos/'+$scope.tokens[i]+'.mp4');
+
+	        }
+	        $scope.showVideo = true;
+	        console.log($scope.videos);
 
 		},function(err){
 			console.log(err);
